@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="css.css" />
-  <script src="js.js" ></script>
+  <script src="js.js"></script>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
       <a href="#contact">Contact</a>
     </div>
     <div class="nav-right">
-      <a href="#">Hire Me</a>
+      <a href="#contact">Hire Me</a>
     </div>
   </div>
 
@@ -35,7 +35,7 @@
       <div class="intro-text">
         <p class="intro">Hi, I am</p>
         <h1 class="name">Rovelyn</h1>
-        <a href="cv.pdf" class="download-btn" download>Download CV</a>
+        <a href="cv.pdf" class="download-btn" download>Download CVS</a>
       </div>
       <div class="card">
         <img src="images/IMG_20250322_183437_639.jpg" alt="Rovelyn" />
@@ -44,8 +44,67 @@
   </section>
 
   <section id="about" class="about-me">
-    <h2>About Me</h2>
-  
+    <div class="about-left"></div>
+    <div class="about-right">
+      <h2>About Me</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nunc
+        vitae tellus vulputate, nec bibendum enim consectetur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nunc
+        vitae tellus vulputate, nec bibendum enim consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nunc
+        vitae tellus vulputate, nec bibendum enim consectetur.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius nunc
+        vitae tellus vulputate, nec bibendum enim consectetur.
+      </p>
+    </div>
+  </section>
+
+  <section id="works" class="projects">
+    <div class="projects-header">
+      <h2>My Projects</h2>
+    </div>
+
+    <div class="project-cards-row">
+      <div class="project-card-wrapper">
+        <div class="project-card">
+          <img src="images/070416_spongebob_vmed_1p.webp" alt="Spongebob" />
+        </div>
+        <div class="project-desc">Spongebob's Project</div>
+      </div>
+
+      <div class="project-card-wrapper">
+        <div class="project-card">
+          <img src="images/Patrick_Star_character.png" alt="Patrick Star" />
+        </div>
+        <div class="project-desc">Patrick's Project</div>
+      </div>
+
+      <div class="project-card-wrapper">
+        <div class="project-card">
+          <img src="images/bahay.webp" alt="Spongebob's House" />
+        </div>
+        <div class="project-desc">Spongebob's House</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div class="social-links">
+        <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
   </section>
 
 </body>
