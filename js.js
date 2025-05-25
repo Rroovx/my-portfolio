@@ -1,11 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const allLinks = document.querySelectorAll('.nav-links a, .nav-right a');
+  const navToggle = document.getElementById('nav-toggle');
+  const navLinks = document.querySelectorAll('.nav-links a, .nav-right a');
 
-  allLinks.forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      allLinks.forEach(l => l.classList.remove('active'));
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      // Remove 'active' class from all links
+      navLinks.forEach(l => l.classList.remove('active'));
+
+      // Add 'active' class to the clicked link
       link.classList.add('active');
+
+      // Close burger menu (uncheck checkbox)
+      navToggle.checked = false;
     });
   });
 });
